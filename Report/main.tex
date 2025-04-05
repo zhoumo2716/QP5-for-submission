@@ -17,7 +17,6 @@
 \usepackage[font=small,labelfont=bf]{caption}
 \captionsetup{width=\linewidth, font=scriptsize, skip=2pt}
 \captionsetup[figure]{belowskip=-10pt}
-
 %-------Packages---------
 \usepackage{amssymb,amsfonts}
 \usepackage[all,arc]{xy}
@@ -32,6 +31,8 @@
 \usepackage{booktabs}
 \usepackage{tabularx}
 \usepackage{float}
+\usepackage{hyperref}
+\usepackage[hypcap=true]{caption}
 
 
 %--------Theorem Environments--------
@@ -486,7 +487,7 @@ In the \textbf{strong MAR} setting, trends become more complex. While nonparamet
     \end{minipage}
 \end{figure}
 \subsection{Conclusion.}
-Together, these results reveal a nuanced interaction between imputation method, data structure, and missingness mechanism. Parametric models tend to perform well when the data-generating process (DGP) aligns with their assumptions—even under strong MAR—but break down when applied to nonlinear structures. In contrast, nonparametric methods demonstrate greater robustness to model misspecification and perform better in more complex DGPs. However, they often yield higher variance and may degrade more sharply under informative missingness. The comparison between weak and strong MAR scenarios further underscores that the \textbf{nature of missingness—not just its proportion—plays a crucial role} in shaping both imputation accuracy and uncertainty quantification. These findings highlight the importance of selecting imputation strategies that are well-suited to the underlying data structure and realistic assumptions about missingness, balancing the trade-offs between parametric simplicity and nonparametric flexibility.
+All the simulations are done in \textit{R} and the code can be found on GitHub: \url {https://github.com/zhoumo2716/QP5-for-submission}. In summary, these results reveal a nuanced interaction between imputation method, data structure, and missingness mechanism. Parametric models tend to perform well when the data-generating process (DGP) aligns with their assumptions—even under strong MAR—but break down when applied to nonlinear structures. In contrast, nonparametric methods demonstrate greater robustness to model misspecification and perform better in more complex DGPs. However, they often yield higher variance and may degrade more sharply under informative missingness. The comparison between weak and strong MAR scenarios further underscores that the \textbf{nature of missingness—not just its proportion—plays a crucial role} in shaping both imputation accuracy and uncertainty quantification. These findings highlight the importance of selecting imputation strategies that are well-suited to the underlying data structure and realistic assumptions about missingness, balancing the trade-offs between parametric simplicity and nonparametric flexibility. 
 
 \clearpage
 \printbibliography
