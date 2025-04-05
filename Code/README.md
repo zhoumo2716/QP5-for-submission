@@ -4,6 +4,7 @@ This repository contains Python code for the project, including functions, simul
 ## Key Information:
 - Each block of code is clearly commented, with detailed explanations at the start of each block. These comments explain the purpose of the code, such as:
   - Writing functions for data generation
+  - Writing functions for imputation and evaluation. 
   - Simulations
   - Calculating summary statistics
   - etc
